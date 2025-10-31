@@ -31,7 +31,7 @@ Unfortunately, the original extension uses features unsupported by Firefox or Sa
 To install the extension, follow these steps:
 
 0. Uninstall the original Google Scholar PDF Reader extension if you have it installed.
-1. [Download the latest release](https://github.com/salcc/Scholar-PDF-Reader-with-Annotations/releases/latest).
+1. [Download the latest release](https://github.com/salcc/Scholar-PDF-Reader-with-Annotations/releases/latest) ("Source code" under "Assets").
 2. Extract the ZIP file to a folder on your computer.
 3. Open the browser's extension management page:
    - Chrome: `chrome://extensions`
@@ -91,4 +91,6 @@ For bug reports and feature suggestions, please open an issue on GitHub. Feel fr
 
 ## Disclaimer
 
-This project is not affiliated with, supported, or endorsed by Google.
+This project is not affiliated with, supported, or endorsed by Google. Nonetheless, by installing this extension, you agree to the Google Terms of Service and Privacy Policy at https://www.google.com/intl/en/policies/.
+
+

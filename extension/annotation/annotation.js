@@ -886,6 +886,9 @@ class ColorPickerManager {
 }
 
 function initializeAnnotation() {
+    // clear legacy empty-key entries from storage
+    chrome.storage.local.remove([''], () => console.log('Cleared legacy empty-key entries'));
+
     console.log('Initializing annotation...');
     const colorPickerManager = new ColorPickerManager();
     
@@ -1070,6 +1073,11 @@ function observePageChanges() {
 
 function handleSelection(colorPickerManager) {
     if (!colorPickerManager.activeTools.isHighlighting || colorPickerManager.activeTools.isErasing) return;
+
+    if (!pdfUrl) {
+        console.warn('Document not ready yet — please wait a moment.');
+        return;
+    }
 
     const selection = window.getSelection();
     if (selection.isCollapsed) return;
